@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de superhéroes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1 class="form-container__title">
+        ¡Sé un nuevo superhéroe en nuestro equipo!
+      </h1>
+      <form class="form" action="/procesar-formulario" method="POST">
+        <label class="form__label" for="nombre">Nombre del superhéroe</label>
+        <input
+          type="text"
+          class="form__input"
+          minlength="3"
+          maxlength="20"
+          required
+          placeholder="Introduce tu nombre de superhéroe"
+          id="nombre"
+        />
+
+        <label class="form__label" for="nivel">Nivel de poder</label>
+        <input
+          type="number"
+          class="form__input"
+          min="1"
+          max="10"
+          required
+          placeholder="Ingresa tu nivel de poder del 1 al 10"
+          id="nivel"
+        />
+
+        <label class="form__label" for="correoElectrónico"
+          >Correo electrónico</label
+        >
+        <input
+          type="email"
+          class="form__input"
+          required
+          placeholder="Introduce tu correo electrónico"
+          id="correoElectrónico"
+        />
+
+        <label class="form__label" for="contraseña">Contraseña</label>
+        <input
+          type="password"
+          class="form__input"
+          minlength="6"
+          maxlength="8"
+          required
+          placeholder="Introduce tu contraseña"
+          id="contraseña"
+        />
+
+        <label class="form__label" for="fechaDeNacimiento"
+          >Fecha de nacimiento</label
+        >
+        <input
+          type="date"
+          class="form__input"
+          required
+          id="fechaDeNacimiento"
+        />
+
+        <label class="form__label" for="superpoderes"
+          >Lista de superpoderes</label
+        >
+        <textarea
+          rows="4"
+          cols="50"
+          placeholder="Escribe aquí tus superpoderes"
+          required
+          class="form__textarea"
+          id="superpoderes"
+        ></textarea>
+
+        <label class="form__label" for="fortaleza"
+          >¿Cuál es tu mayor fortaleza como superhéroe?</label
+        >
+        <select class="form__select" id="fortaleza">
+          <option value="Liderazgo" selected>El liderazgo</option>
+          <option value="Lucha">La lucha</option>
+          <option value="Inteligencia">La inteligencia</option>
+        </select>
+
+        <label class="form__label"
+          >Elige un superhéroe con el que te gustaría asociarte:</label
+        >
+        <div class="form__radio-group">
+          <label class="form__radio-label">
+            <input
+              type="radio"
+              name="compañero"
+              value="Centinela de la Libertad"
+              class="form__radio"
+              required
+              checked
+            />
+            Centinela de la Libertad
+          </label>
+          <label class="form__radio-label">
+            <input
+              type="radio"
+              name="compañero"
+              value="Guerrero superior"
+              class="form__radio"
+            />
+            Guerrero superior
+          </label>
+          <label class="form__radio-label">
+            <input
+              type="radio"
+              name="compañero"
+              value="Titán de acero"
+              class="form__radio"
+            />
+            Titán de acero
+          </label>
+        </div>
+
+        <label for="términos" class="form__label"
+          >¿Conoces los términos y condiciones de esta aplicación?</label
+        >
+        <div class="form__checkbox">
+          <input type="checkbox" id="términos" class="form__checkbox-input" />
+          Sí, los conozco
+        </div>
+
+        <div class="form__buttons">
+          <button type="reset" class="form__button form__button--reset">
+            Reiniciar
+          </button>
+          <button
+            type="submit"
+            class="form__button form__button--submit"
+            disabled
+          >
+            Sé un héroe
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div name="modal" class="modal">
+      <div class="modal__content">
+        <h2 class="modal__title">¡Tu solicitud ha sido aceptada!</h2>
+        <p class="modal__text">
+          Bienvenido a la liga, pero recuerda:<br />
+          ¡Un gran poder conlleva una gran responsabilidad!
+        </p>
+        <button name="closeModal" class="modal__button">Cerrar</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
