@@ -1,0 +1,94 @@
+body,
+h1,
+h2,
+p {
+  /*margin: 0;*/
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-lat/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 140px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.content {
+  font-size: 0;
+  width: 790px;
+  margin: 100px auto 50px auto;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  border: 2px solid rgba(250, 50, 50, 0.4);
+  display: inline-block;
+  margin-right: 90px;
+  box-sizing: border-box;
+  
+}
+
+.no-right-margin {
+  margin-right: 0;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 17px;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  height: 300px;
+  background-color: #000;
+  display: flex;
+}
+
+.footer-author {
+  color: #fff;
+  font-size: 24px;
+  margin: auto;
+}
+
+h2.footer-author {
+  color: red;
+}
+
+.card-cuadricula{
+  position: relative;
+  top:20px;
+  padding: 45px 45px 50px;
+}
