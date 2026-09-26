@@ -1,0 +1,398 @@
+/* =========================================================
+   PORTAFOLIO - VERSIÓN BASE 1440 PX
+   ---------------------------------------------------------
+   En esta primera etapa se reproduce la composición de
+   escritorio. Los puntos de ruptura se añadirán después.
+   ========================================================= */
+
+:root {
+  --color-bg: #101010;
+  --color-surface: #1a1a1a;
+  --color-text: #ffffff;
+  --color-muted: #a7a7a7;
+  --color-purple: #6c63ff;
+  --color-purple-dark: #292452;
+  --color-border: #303030;
+
+  --container: 1224px;
+  --radius: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 50% 94%,
+      rgba(75, 66, 145, 0.85) 0,
+      rgba(75, 66, 145, 0.42) 13%,
+      rgba(16, 16, 16, 0) 36%
+    ),
+    var(--color-bg);
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+  width: min(var(--container), calc(100% - 64px));
+  min-height: 88px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--color-text);
+  border-radius: 50%;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-size: 14px;
+}
+
+.main-nav a {
+  color: var(--color-muted);
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: var(--color-text);
+}
+
+/* =========================
+   ESTRUCTURA GENERAL
+   ========================= */
+
+.hero,
+.skills,
+.projects {
+  width: min(var(--container), calc(100% - 64px));
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 14px;
+  font-size: 64px;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  margin-bottom: 34px;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  min-height: 510px;
+  padding-top: 8px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 70px;
+  align-items: start;
+}
+
+.hero__content {
+  max-width: 790px;
+  padding-top: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  color: var(--color-purple);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.hero__role {
+  margin-bottom: 24px;
+  color: #d5d5d5;
+  font-size: 18px;
+}
+
+.hero__description {
+  max-width: 790px;
+  margin-bottom: 26px;
+  color: #d0d0d0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.hero__photo {
+  width: 380px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.button {
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--color-purple);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.button:hover {
+  color: var(--color-purple);
+}
+
+/* =========================
+   HABILIDADES
+   ========================= */
+
+.skills {
+  padding-top: 42px;
+}
+
+.skills__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.skill {
+  min-height: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.skill__icon {
+  min-width: 42px;
+  height: 42px;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.skill--html .skill__icon {
+  background: #f06529;
+  color: white;
+}
+
+.skill--css .skill__icon {
+  background: #2965f1;
+  color: white;
+}
+
+.skill--js .skill__icon {
+  background: #f7df1e;
+  color: #111111;
+}
+
+.skill--git .skill__icon {
+  background: #f05032;
+  color: white;
+}
+
+.skill--github .skill__icon,
+.skill--ai .skill__icon {
+  background: #ffffff;
+  color: #111111;
+  border-radius: 50%;
+}
+
+/* =========================
+   PROYECTOS
+   ========================= */
+
+.projects {
+  padding-top: 52px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px;
+}
+
+.project-card {
+  min-width: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 8.7;
+  overflow: hidden;
+  background: #6c63ff;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__body {
+  min-height: 280px;
+  padding: 22px 24px 24px;
+}
+
+.project-card__body p {
+  margin-bottom: 16px;
+  color: #c7c7c7;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.project-card__body strong {
+  color: #ffffff;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 28px;
+  margin-top: 26px;
+}
+
+.project-card__links a {
+  color: #a39dff;
+  font-size: 13px;
+}
+
+.project-card__links a:hover {
+  color: #ffffff;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+  width: min(var(--container), calc(100% - 64px));
+  margin: 74px auto 0;
+  padding: 44px 0 70px;
+  text-align: center;
+}
+
+.site-footer h2 {
+  margin-bottom: 8px;
+}
+
+.email {
+  color: var(--color-purple);
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+
+.social-links a {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.social-links a:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* =========================================================
+   NOTA PARA LAS SIGUIENTES ETAPAS
+   ---------------------------------------------------------
+   Los breakpoints solicitados serán:
+
+   1023px -> adaptación tablet
+   767px  -> adaptación móvil
+   320px  -> ancho mínimo objetivo
+
+   La estructura usa grid, minmax(), width fluido y aspect-ratio
+   para que las futuras adaptaciones puedan hacerse sin cambiar
+   el HTML.
+   ========================================================= */
