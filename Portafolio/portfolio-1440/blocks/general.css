@@ -1,4 +1,27 @@
 /* GENERAL CSS*/
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../vendor/fonts/OpenSans-Bold.woff") format("woff"),
+    url("../vendor/fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../vendor/fonts/OpenSans-SemiBold.woff") format("woff"),
+    url("../vendor/fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../vendor/fonts/OpenSans-Regular.woff") format("woff"),
+    url("../vendor/fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
 
 :root {
   --color-bg: #101010;
