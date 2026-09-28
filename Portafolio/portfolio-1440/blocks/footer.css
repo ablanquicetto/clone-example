@@ -1,0 +1,42 @@
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  width: min(var(--container), calc(100% - 64px));
+  margin: 74px auto 0;
+  padding: 44px 0 70px;
+  text-align: center;
+}
+
+.footer h2 {
+  margin-bottom: 8px;
+}
+
+.footer-email {
+  color: var(--color-purple);
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+
+.footer-link {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.footer-link:hover {
+  background: #ffffff;
+  color: #111111;
+}
