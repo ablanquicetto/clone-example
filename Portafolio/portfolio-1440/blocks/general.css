@@ -1,9 +1,4 @@
-/* =========================================================
-   PORTAFOLIO - VERSIÓN BASE 1440 PX
-   ---------------------------------------------------------
-   En esta primera etapa se reproduce la composición de
-   escritorio. Los puntos de ruptura se añadirán después.
-   ========================================================= */
+/* GENERAL CSS*/
 
 :root {
   --color-bg: #101010;
@@ -55,10 +50,6 @@ a {
   overflow: hidden;
 }
 
-/* =========================
-   ESTRUCTURA GENERAL
-   ========================= */
-
 .header,
 .skills,
 .projects {
@@ -92,17 +83,3 @@ h3 {
   font-size: 18px;
   line-height: 1.2;
 }
-
-/* =========================================================
-   NOTA PARA LAS SIGUIENTES ETAPAS
-   ---------------------------------------------------------
-   Los breakpoints solicitados serán:
-
-   1023px -> adaptación tablet
-   767px  -> adaptación móvil
-   320px  -> ancho mínimo objetivo
-
-   La estructura usa grid, minmax(), width fluido y aspect-ratio
-   para que las futuras adaptaciones puedan hacerse sin cambiar
-   el HTML.
-   ========================================================= */

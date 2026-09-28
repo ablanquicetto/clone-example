@@ -1,6 +1,4 @@
-/* =========================
-   FOOTER
-   ========================= */
+/*FOOTER CSS*/
 
 .footer {
   width: min(var(--container), calc(100% - 64px));
