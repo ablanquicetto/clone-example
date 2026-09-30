@@ -2,12 +2,9 @@
 
 .header {
   width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 380px;
+  margin: 0 auto 100px;
+  display: flex;
   gap: 20px;
-  font-weight: 400px;
-  font-style: normal;
 }
 
 .header__content {
@@ -37,16 +34,29 @@
 .header__links {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 30px;
 }
 
 .header__link {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
   font-style: "SemiBold";
+  font-weight: 600;
   font: size 18px;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.header__link::after {
+  width: 100%;
+  height: 6px;
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #6a00a8, #704cff);
 }
 
 .header__link:hover {
@@ -57,5 +67,4 @@
   width: 387px;
   height: 500px;
   object-fit: cover;
-  object-position: center;
 }

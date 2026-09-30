@@ -8,68 +8,51 @@
 
 .skills {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.skill-title {
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 40px;
 }
 
 .skills__list {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 24px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .skill {
-  min-height: 88px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: #a7a7a7;
-  font-size: 12px;
+  width: 50px;
+  height: 57px;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 
-.skill__icon {
-  min-width: 42px;
-  height: 42px;
-  padding: 6px;
-  display: grid;
-  place-items: center;
-  border-radius: 7px;
-  background: #ffffff;
-  color: #111111;
-  font-size: 17px;
-  font-weight: 800;
+.skill-html {
+  background-image: url(../images/skills-icons/html.svg);
 }
 
-.skill-html .skill__icon {
-  background: #f06529;
-  color: white;
+.skill-css {
+  background-image: url(../images/skills-icons/css.png);
 }
 
-.skill-css .skill__icon {
-  background: #2965f1;
-  color: white;
+.skill-js {
+  background-image: url(../images/skills-icons/js.svg);
 }
 
-.skill-js .skill__icon {
-  background: #f7df1e;
-  color: #111111;
+.skill-git {
+  background-image: url(../images/skills-icons/git.svg);
 }
 
-.skill-git .skill__icon {
-  background: #f05032;
-  color: white;
+.skill-github {
+  background-image: url(../images/skills-icons/github.svg);
 }
 
-.skill-github .skill__icon,
-.skill-ai .skill__icon {
-  background: #ffffff;
-  color: #111111;
-  border-radius: 50%;
+.skill-ai {
+  background-image: url(../images/skills-icons/gpt.svg);
 }
 
 /* PROYECTOS */
