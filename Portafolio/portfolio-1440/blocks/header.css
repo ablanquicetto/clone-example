@@ -3,11 +3,16 @@
 .header {
   width: 90%;
   margin: 0 auto 100px;
+
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  place-items: center;
 }
 
 .header__content {
+  width: calc(100% - 407px);
+  min-width: 387px;
   display: flex;
   flex-direction: column;
 }
@@ -33,6 +38,7 @@
 
 .header__links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 }
@@ -67,4 +73,10 @@
   width: 387px;
   height: 500px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .header__photo-img {
+    order: -1;
+  }
 }

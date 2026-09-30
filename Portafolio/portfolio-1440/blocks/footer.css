@@ -4,12 +4,13 @@
   width: 90%;
   margin: auto;
 }
+
 .footer-content {
   margin: 100px 0px;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   place-items: center;
 }
 
@@ -26,6 +27,7 @@
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
 }
