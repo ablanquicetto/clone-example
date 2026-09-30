@@ -58,6 +58,6 @@ body {
       rgba(75, 66, 145, 0.42) 13%,
       rgba(16, 16, 16, 0) 36%
     ),
-    var(--color-bg);
+    #101010;
   overflow: hidden;
 }

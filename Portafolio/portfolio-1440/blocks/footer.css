@@ -1,36 +1,39 @@
 /*FOOTER CSS*/
 
 .footer {
-  margin: 74px auto 0;
-  padding: 44px 0 70px;
-  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.footer-content {
+  margin: 100px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  place-items: center;
 }
 
-.footer h2 {
-  margin-bottom: 8px;
+.footer-title {
+  font-family: "Archivo Black";
+  font-size: 40px;
 }
 
 .footer-email {
-  color: #6c63ff;
-  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: #6d6dff;
 }
 
 .footer-links {
-  margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 34px;
+  gap: 80px;
 }
 
 .footer-link {
   width: 24px;
   height: 24px;
-  display: grid;
-  place-items: center;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  font-size: 11px;
-  font-weight: 700;
+  object-fit: cover;
   text-decoration: none;
 }
 

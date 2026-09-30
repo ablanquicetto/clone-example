@@ -51,47 +51,71 @@
           </ul>
         </section>
         <section class="projects" id="proyectos">
-          <h2>Proyectos destacados</h2>
-          <div class="projects__grid">
+          <h2 class="projects-title">Proyectos destacados</h2>
+          <div class="projects__list">
             <article class="project-card">
               <div class="project-card__image">
                 <img
-                  src="./images/triple-espresso.jpg"
+                  src="./images/cards-img/cafe-espresso.jpg"
                   alt="Vista previa del proyecto Página web de una cafetería"
                 />
+                <div class="project-card-transparent"></div>
+                <div class="project-card-transparent-content">
+                  <img src="./images/skills-icons/html.svg" alt="html">
+                  <img src="./images/skills-icons/css.png" alt="css">
+                </div>
               </div>
-              <div class="project-card__body">
-                <h3>Página web de una cafetería</h3>
-                <p>
+              <div class="project-card__info">
+                <h3 class="project-card__info-title">Página web de una cafetería</h3>
+                <p class="project-card__info-text">
                   Desarrollo de una landing page responsiva para una cafetería
                   siguiendo un brief de diseño. Incluye estructura semántica,
                   maquetación con Flexbox, creación de secciones nuevas y un
                   formulario de contacto funcional.
-                </p>
-                <p>
-                  <strong>Logro:</strong> Implementé desde cero el diseño
-                  completo de la página, organicé el proyecto con buenas
-                  prácticas y publiqué la versión final utilizando GitHub Pages.
+                  <p class="project-card__info-text">
+                    <strong>Logro:</strong> Implementé desde cero el diseño
+                    completo de la página, organicé el proyecto con buenas
+                    prácticas y publiqué la versión final utilizando GitHub Pages.
+                  </p>
                 </p>
                 <div class="project-card__links">
-                  <a href="#">↗ Demo en vivo</a>
-                  <a href="#">◉ GitHub</a>
+                  <a class="project-card__link " href="#">
+                    <img src="./images/cards-img/Demo-Live.svg" alt="Demo-Live">
+                  </a>
+                  <a class="project-card__link " href="#">
+                    <img 
+                      class="project-card__link-theme-opacity"
+                      src="./images/cards-img/github-link.svg" alt="Githut"
+                    />
+                  </a>
                 </div>
               </div>
             </article>
             <article class="project-card">
               <div class="project-card__image">
                 <img
-                  src="./images/project-placeholder.jpg"
+                  src="./images/cards-img/javas.jpg"
                   alt="Vista previa de un segundo proyecto"
                 />
-              </div>
-              <div class="project-card__body">
-                <h3>Mi proyecto</h3>
-                <p>Descripción del proyecto</p>
+                <div class="project-card-transparent"></div>
+                <div class="project-card-transparent-content">
+                  <img src="./images/skills-icons/js.svg" alt="JavaScript">
+                  <img src="./images/skills-icons/in-process.svg" alt="En desarrollo">
+                </div>
+              </div> 
+              <div class="project-card__info">
+                <h3 class="project-card__info-title">Mi proyecto</h3>
+                <p class="project-card__info-text">Descripción del proyecto</p>
                 <div class="project-card__links">
-                  <a href="#">↗ Demo en vivo</a>
-                  <a href="#">◉ GitHub</a>
+                  <a class="project-card__link " href="#">
+                    <img src="./images/cards-img/Demo-Live.svg" alt="Demo-Live">
+                  </a>
+                  <a class="project-card__link " href="#">
+                    <img 
+                      class="project-card__link-theme-opacity"
+                      src="./images/cards-img/github-link.svg" alt="Githut"
+                    />
+                  </a>
                 </div>
               </div>
             </article>
@@ -99,15 +123,25 @@
         </section>
       </main>
       <footer class="footer" id="contacto">
-        <h2>Contacto</h2>
-        <a class="footer-email" href="mailto:student@tripleten.com">
-          student@tripleten.com
-        </a>
-        <div class="footer-links">
-          <a class="footer-link" href="#">in</a>
-          <a class="footer-link" href="#">f</a>
-          <a class="footer-link" href="#">◎</a>
-          <a class="footer-link" href="#">X</a>
+        <div class="footer-content">
+          <h2 class="footer-title">Contacto</h2>
+          <a class="footer-email" href="mailto:student@tripleten.com">
+            santiagoalfonso1127@gmail.com
+          </a>
+          <div class="footer-links">
+            <a class="footer-link" href="#">
+              <img src="./images/social-icons/Instagram-Negative.svg" alt="Instagram">  
+            </a>
+            <a class="footer-link" href="#">
+              <img src="./images/social-icons/Fecebook-Negative.svg" alt="Facebook">  
+            </a>
+            <a class="footer-link" href="#">
+              <img src="./images/social-icons/Linkedin-Negative.svg" alt="LinkedIn">  
+            </a>
+            <a class="footer-link" href="#">
+              <img src="./images/social-icons/Twiter-Negative.svg" alt="Twiter">  
+            </a>
+          </div>
         </div>
       </footer>
     </div>
