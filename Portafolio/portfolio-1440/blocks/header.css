@@ -1,10 +1,13 @@
 /*HEADER CSS*/
 
 .header {
-  max-width: 100%;
+  width: 90%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 20px;
+  font-weight: 400px;
+  font-style: normal;
 }
 
 .header__content {
@@ -14,15 +17,11 @@
 
 .header__title {
   font-family: "Archivo Black", Arial, sans-serif;
-  font-weight: 400px;
-  font-style: "Regular";
   font-size: 72px;
 }
 
 .header__role {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400px;
-  font-style: "Regular";
   font: size 18px;
   opacity: 0.5;
   margin: 15px 0 30px;
@@ -30,23 +29,9 @@
 
 .header__description {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400px;
-  font-style: "Regular";
   font: size 18px;
   line-height: 1.5;
   margin-bottom: 30px;
-}
-
-.header__photo {
-  width: 100%;
-}
-
-.header__photo-img {
-  width: 387px;
-  height: 500px;
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
-  object-position: center;
 }
 
 .header__links {
@@ -61,8 +46,16 @@
   font-style: "SemiBold";
   font: size 18px;
   text-decoration: none;
+  color: inherit;
 }
 
 .header__link:hover {
-  color: var(--color-purple);
+  color: #6c63ff;
+}
+
+.header__photo-img {
+  width: 387px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
 }

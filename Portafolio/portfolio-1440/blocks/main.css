@@ -1,14 +1,19 @@
 /*MAIN CSS*/
 
 /* SKILLS */
+.content {
+  width: 90%;
+  margin: auto;
+}
 
 .skills {
-  padding-top: 42px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
 }
 
 .skills__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -23,7 +28,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--color-muted);
+  color: #a7a7a7;
   font-size: 12px;
 }
 
@@ -81,8 +86,8 @@
 
 .project-card {
   min-width: 0;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: #1a1a1a;
+  border: 1px solid #303030;
 }
 
 .project-card__image {

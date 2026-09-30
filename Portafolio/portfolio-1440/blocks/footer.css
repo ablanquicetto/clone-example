@@ -1,7 +1,6 @@
 /*FOOTER CSS*/
 
 .footer {
-  width: min(var(--container), calc(100% - 64px));
   margin: 74px auto 0;
   padding: 44px 0 70px;
   text-align: center;
@@ -12,7 +11,7 @@
 }
 
 .footer-email {
-  color: var(--color-purple);
+  color: #6c63ff;
   font-size: 14px;
 }
 
