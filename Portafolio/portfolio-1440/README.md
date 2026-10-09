@@ -113,15 +113,3 @@ Además de los tamaños de referencia, se comprueba el comportamiento del diseñ
 - 320 px
 
 El objetivo es evitar desbordamientos horizontales, textos comprimidos, imágenes deformadas y elementos que se superpongan o pierdan su alineación.
-
-## Pendientes antes de la publicación
-
-- Implementar las adaptaciones responsivas para los puntos de ruptura establecidos.
-- Comprobar el diseño en las resoluciones intermedias.
-- Corregir posibles desbordamientos y problemas de alineación.
-- Sustituir los enlaces de ejemplo por destinos reales.
-- Incorporar el archivo del CV y configurar su descarga.
-- Completar la información del segundo proyecto.
-- Verificar las imágenes y los textos alternativos.
-- Sustituir los datos de contacto de referencia por los definitivos.
-- Revisar la navegación, el contraste y la accesibilidad básica.
