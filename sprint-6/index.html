@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Bytes Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cabinet-grotesk"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <main>
+      <section class="reservation page__section">
+        <img
+          src="./images/shiny-lid.png"
+          alt="Ilustración brillante de la tapa del restaurante"
+          class="reservation__image"
+        />
+        <h2 class="reservation__title">Se recomienda <br />reservar</h2>
+        <button type="button" class="reservation__button">
+          Reservar una mesa
+        </button>
+      </section>
+    </main>
+    <div class="modal" id="reservation-modal">
+      <div class="modal__content">
+        <button type="button" class="modal__close-btn"></button>
+        <h3 class="modal__title">Reservar una mesa</h3>
+        <form class="modal__form form" name="reservation" novalidate>
+          <fieldset class="form__fieldset">
+            <label for="name-input" class="form__label">
+              Nombre
+              <input
+                id="name-input"
+                type="text"
+                class="form__input"
+                name="name"
+                required
+                placeholder="Name"
+              />
+            </label>
+            <label for="count-input" class="form__label">
+              Número de personas
+              <input
+                id="count-input"
+                type="number"
+                class="form__input"
+                name="personCount"
+                min="1"
+                max="8"
+                required
+                placeholder="1-8"
+              />
+            </label>
+            <label for="datetime-input" class="form__label">
+              Fecha y hora
+              <input
+                id="datetime-input"
+                type="datetime-local"
+                class="form__input"
+                name="dateTime"
+                required
+              />
+            </label>
+            <label for="email-input" class="form__label">
+              Tu correo electrónico
+              <input
+                id="email-input"
+                type="email"
+                class="form__input"
+                name="email"
+                required
+                placeholder="email@email.com"
+              />
+            </label>
+            <div class="form__label">
+              <label for="seating-interior-input">
+                Ubicación preferida:
+                <input
+                  id="seating-interior-input"
+                  type="radio"
+                  name="seatingPreference"
+                  value="interior"
+                  required
+                />
+                Interior
+              </label>
+              <label for="seating-exterior-input">
+                <input
+                  id="seating-exterior-input"
+                  type="radio"
+                  name="seatingPreference"
+                  value="exterior"
+                  required
+                />
+                Exterior
+              </label>
+            </div>
+            <label for="subscribe-input" class="form__label">
+              <input
+                id="subscribe-input"
+                type="checkbox"
+                class="form__input"
+                name="subscribe"
+              />
+              Acepto recibir noticias y actualizaciones por correo electrónico
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <button type="submit" class="form__submit-btn">
+              Reservar una mesa
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal_type_confirmation" id="confirmation-modal">
+      <div class="modal__content modal__content_type_confirmation">
+        <button class="modal__close-btn"></button>
+        <p class="modal__text">
+          ¡Hola, {name}! Tu reserva para {count} se ha realizado para el {date}.
+          Se ha enviado un correo electrónico de confirmación a {email}.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
