@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Constructor de la lista de reproducción</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_logo-black-eng.png"
+        alt="TripleTen logo"
+        class="header__logo"
+      />
+      <p class="header__logo-sub">Constructor de la lista de reproducción</p>
+    </header>
+    <main class="container">
+      <div class="cover">
+        <div class="cover__image"></div>
+        <h1 class="cover__heading">Lista de reproducción</h1>
+      </div>
+      <div class="block">
+        <form class="form" id="add-song-form" name="addSongForm">
+          <h2 class="form__title">Agregar canción</h2>
+          <fieldset class="form__fieldset">
+            <input
+              type="text"
+              placeholder="Song Title"
+              class="form__input"
+              id="song-title-input"
+            />
+            <input
+              type="text"
+              placeholder="Artist"
+              class="form__input"
+              id="song-artist-input"
+            />
+            <button type="submit" class="form__submit-btn button">
+              Agregar
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="block">
+        <h2>Lista de reproducción</h2>
+        <div class="no-songs">
+          <p class="no-songs__text">No se ha agregado ninguna canción</p>
+        </div>
+        <ul class="songs-container">
+          <template id="song-template">
+            <li class="song">
+              <h3 class="song__artist"></h3>
+              <p class="song__title"></p>
+              <div class="song__buttons">
+                <button
+                  type="button"
+                  class="song__button song__button_type_like"
+                ></button>
+                <button
+                  type="button"
+                  class="song__button song__button_type_delete"
+                ></button>
+              </div>
+            </li>
+          </template>
+        </ul>
+        <button class="block__button button" id="clear-playlist-btn" disabled>
+          Borrar lista de reproducción
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
